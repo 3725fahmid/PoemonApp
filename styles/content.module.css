@@ -1,0 +1,138 @@
+.container{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   overflow: hidden;
+}
+.rightLoop{
+    animation: rightLoop 30s infinite;
+  }
+.leftLoop {
+    animation: rightLoop 30s infinite;
+}
+@keyframes rightLoop {
+    0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
+    }
+  
+    .ArticelTitle {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem;
+      
+    }
+    .ArticelTitle h2 {
+      margin-top: -15px;
+      position: absolute;  
+      font-size: 48px;
+      font-weight: 700;
+      color: rgba(39, 82, 168, 0.861);
+    }
+    .ArticelTitle h2:nth-child(3){
+      margin-top: 100px;
+    }
+    .ArticelContent{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .LeftArtical {
+      padding: 10px;
+    }
+    .img3{
+        float: right;
+        clear: right;
+
+    }
+    .img4{
+        float: right;
+    }
+   
+    .img2{
+        float: right;
+        clear: right;
+    }
+    .img5{
+        float: left;
+        clear: left;
+    }
+    .img1{
+        float: left;
+        clear: left;
+    }
+    .img1,.img2,.img3,.img4,.img5{
+        padding: 0.4rem;
+        margin: 0 0 0 15px;
+
+    }
+
+
+    .rightArtical {
+      padding: 5px;
+    }
+  
+    .MixImage {
+      position: relative;
+      width: 550px;
+      height: 600px;
+    }
+
+    @media (max-width: 600px) {
+      .ArticelTitle h2{
+        font-size: 22px;
+        line-height: 25px;
+      }
+      .ArticelTitle h2:nth-child(3){
+        margin-top: 50px;
+      }
+      .ArticelContent{
+        width: 100%;
+        height: auto;
+        margin: 2rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .LeftArtical {
+        padding: 0;
+      }
+      .img3{
+        float:initial;
+        clear: none;
+        }
+    .img4{
+        float: none;
+    }
+   
+    .img2{
+        float: none;
+        clear: none;
+    }
+    .img5{
+        float: none;
+        clear: none;
+    }
+    .img1{
+        float: none;
+        clear: none;
+    }
+    .img1,.img2,.img3,.img4,.img5{
+      padding: 0;
+      margin: 0;
+
+    }
+
+
+    .rightArtical {
+      padding: 0;
+    }
+    }
+    
