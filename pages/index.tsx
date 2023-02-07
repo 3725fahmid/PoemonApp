@@ -63,8 +63,8 @@ const Home: NextPage = ({data}: any ) => {
             </Card>
             <CardContent className={styles.PokemonName}>
               <h2>{poki.name}</h2>
-              <span>konk</span>
-              <span>konk</span>
+              <span>gress</span>
+              <span>poson</span>
             </CardContent>
           </a>
           ))}
