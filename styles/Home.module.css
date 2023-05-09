@@ -5,14 +5,12 @@
   background-repeat: no-repeat;
   background-size: fill;
   overflow: hidden;
-
 }
 
 .main {
   background-image: url('../public/Texture.png');
   background-repeat: no-repeat;
   background-size: auto;
-
   min-height: 100vh;
   padding-top: 3rem;
   flex: 1;
@@ -35,6 +33,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 2rem;
+
 }
 
 .card {
@@ -48,6 +47,25 @@
   transition: color 0.15s ease, border-color 0.15s ease;
   max-height: 350px;
 }
+@media (350px < width < 950px) {
+  .main{
+    width: 100%;
+    overflow: hidden;
+    min-height: 60vh;
+    width: auto;
+    padding: 0;
+  }
+  .grid{
+    width: 100%;
+    margin-bottom: 0;
+    height: 600px;
+    justify-content: left;
+    flex-wrap: nowrap;
+    overflow: auto;
+    padding: 1rem;
+  }
+}
+
 
 .card:hover,
 .card:focus,
@@ -95,13 +113,6 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-}
 
 @media (prefers-color-scheme: dark) {
   .card,

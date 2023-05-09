@@ -53,7 +53,7 @@ const Home: NextPage = ({data}: any ) => {
         <div className={styles.grid}>
           {pokemonType.map((poki: any) => (
           <a key={pokemonType.id} href="#" className={styles.card}>
-            <Card sx={{ maxWidth: 250 }}>
+            <Card sx={{ Width: 250 }}>
             <CardMedia
             className={styles.Pokemonimage}
               sx={{ height: 250 ,width:250,borderRadius: 2}}

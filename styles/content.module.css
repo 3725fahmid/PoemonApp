@@ -6,9 +6,25 @@
 }
 .rightLoop{
     animation: rightLoop 30s infinite;
+    position: relative;
+  }
+  .rightLoop::after{
+    position: absolute;
+    bottom: 25px;
+    width: 20px;
+    height: 50%;
+    background-color: red;
   }
 .leftLoop {
     animation: rightLoop 30s infinite;
+}
+@keyframes stayIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 @keyframes rightLoop {
     0% {
